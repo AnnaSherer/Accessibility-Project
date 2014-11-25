@@ -88,6 +88,15 @@ define('WP_DEBUG', false);
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
+
+
+
+// Add constant variables above this line
+define( 'WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content' );
+define( 'WP_CONTENT_URL', 'http://localhost:8888/wp-content' );
+
+
+
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
 
